@@ -1,0 +1,26 @@
+<header>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo"><span class="logo-diogo">Herlander</span><span class="logo-pinto">Pinto</span></a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <!-- "false" class a result of a one-line EJS evaluation to determine the active tab -->
+        <li class="<%= active == 'about' && 'active' %>"><a class="waves-effect" href="/">About Me</a></li>
+        <li class="<%= active == 'portfolio' && 'active' %>"><a class="waves-effect" href="/portfolio">My Portfolio</a></li>
+        <li class="<%= active == 'resume' && 'active' %>"><a class="waves-effect" href="/resume">My Resume</a></li>
+        <li class="<%= active == 'contact' && 'active' %>"><a class="waves-effect" href="/contact">Hire Me</a></li>
+        <!--<li class="<%= active == 'blog' && 'active' %>"><a class="waves-effect" href="/blog">Blog</a></li> -->
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li class="<%= active == 'about' && 'active' %>"><a class="waves-effect" href="/">About Me</a></li>
+        <li class="<%= active == 'portfolio' && 'active' %>"><a class="waves-effect" href="/portfolio">My Portfolio</a></li>
+        <li class="<%= active == 'resume' && 'active' %>"><a class="waves-effect" href="/resume">My Resume</a></li>
+        <li class="<%= active == 'contact' && 'active' %>"><a class="waves-effect" href="/contact">Hire Me</a></li>
+        <!--<li class="<%= active == 'blog' && 'active' %>"><a class="waves-effect" href="/blog">Blog</a></li> -->
+        <a href="tel:+16479885226"><div class="waves-effect waves-light btn full-width"><i class="small mdi-communication-phone right"></i>647 988 5226</div></a>
+        <a href="sms://+16479885226" class="hide-on-med-and-up"><div class="waves-effect waves-light btn full-width"><i class="small mdi-communication-textsms right"></i>TEXT ME</div></a>
+        <a href="mailto:h.diogopinto@live.com?subject=Website%20Inquiry"><div class="waves-effect waves-light btn full-width"><i class="small mdi-communication-email right"></i>EMAIL ME</div></a>      
+      </ul>
+    </div>
+  </nav>
+</header>

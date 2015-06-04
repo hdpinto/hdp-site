@@ -1,0 +1,55 @@
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <div class="col m2 s4 center">
+              <img title="HTML 5" src="img/html5-logo-gs.png">
+            </div>
+            <div class="col m2 s4 center">
+             <img title="CSS 3" src="img/css3-logo-gs.png">
+            </div>
+            <div class="col m3 s4 center">
+              <a target="_blank" href="http://materializecss.com/"><img title="Materialize CSS Framework" src="img/materialize-logo-gs.png"></a>
+            </div>
+            <div class="col m2 s6 center">
+              <a target="_blank" href="https://angularjs.org/"><img title="AngularJS" src="img/angular-logo-gs.png"></a>
+            </div>
+            <div class="col m2 s6 center">
+              <a target="_blank" href="https://nodejs.org/"><img title="NodeJS" src="img/nodejs-logo-gs.png"></a>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+          &copy; 2015 Herlander Diogo Pinto
+        </div>
+    </div>
+</footer>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="/js/bin/materialize.min.js"></script>
+<script type="text/javascript">
+// Initialize collapse button
+$(document).ready(function(){
+  $(".button-collapse").sideNav();
+}
+// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+</script>
+<% if(body == "portfolio.ejs"){ %>
+<script type="text/javascript" src="/slick/slick.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.main-slider').slick({
+      arrows: false,
+      dots: false,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      fade: false,
+      speed: 500,
+    });
+    getReview("reviewPane", -2);
+  });
+</script>
+<% } %>
